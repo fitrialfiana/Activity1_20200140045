@@ -33,7 +33,7 @@ public class DataController {
     }
 
 
-    @RequestMapping("/tampilkandata")
+    @RequestMapping("/dataktp")
     public String tampil(Model kurir)
     {
         
