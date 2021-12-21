@@ -34,6 +34,7 @@ public class DataController {
 
 
     @RequestMapping("/dataktp")
+    
     public String tampil(Model kurir)
     {
         
@@ -42,6 +43,8 @@ public class DataController {
         ArrayList<String> datainfo1 = new ArrayList();
         ArrayList<String> datainfo2 = new ArrayList();
         ArrayList<String> datainfo3 = new ArrayList();
+        ArrayList<String> data = new ArrayList();
+
        
         
         //Inisialisasi nama datainfo
@@ -49,15 +52,16 @@ public class DataController {
         datainfo1 = serv.tabel1();
         datainfo2 = serv.tabel2();
         datainfo3 = serv.tabel3();
-       
-
+        
+      
+            
         //isi datainfo dari projectService
         kurir.addAttribute("ktp", datainfo); 
         kurir.addAttribute("ktp1", datainfo1); 
         kurir.addAttribute("ktp2", datainfo2); 
         kurir.addAttribute("ktp3", datainfo3); 
        
-        return "viewData"; 
+        return "dataktp"; 
         
     }
 }

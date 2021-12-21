@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+                <td th:text="${terimadata1}"></td>
+-->
+<html>
+    <head>
+        <title>Tampilkan Data KTP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div> Data KTP</div>
+        <hr>
+        <table  border="1"> 
+            <tr th:each="terimadata:${ktp}">
+                <td th:text="${terimadata}"></td>
+                <td th:text="${ktp1}"></td>
+                <td th:text="${ktp2}"></td>
+                <td th:text="${ktp3}"></td>
+            </tr> 
+            
+        </table>
+ 
+    </body>
+</html>
